@@ -1,0 +1,98 @@
+.header {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  
+  background-color: #2f303a;
+  background-image: url(.././imgs/header-bg.jpg);  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(.././imgs/header-decor.svg);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 456px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(35%);
+    z-index: 2;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-image: url(.././imgs/header-decor.svg);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 456px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(75%) rotate(180deg);
+    z-index: 3;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    // margin: 57px 0;
+    // расстояние между блоками 
+    gap: 100px;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    min-height: calc(100vh - 45px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__content-box {
+    max-width: 550px;
+    text-align: center;
+    margin-right: 30px;
+
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+
+    color: $secondary-text-color;
+  }
+
+  &__titel {
+    margin-bottom: 20px;
+
+    font-size: 64px;
+    line-height: 1.11em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    font-size: 24px;
+    line-height: 1.125em;
+  }  
+
+  &__decor-text {
+    position: absolute;
+    top: 0;
+  }
+}

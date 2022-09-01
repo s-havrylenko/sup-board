@@ -1,0 +1,26 @@
+.button {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+
+  padding: 12px 71px 8.5px 71px;
+  
+  cursor: pointer;  
+}
+
+.button__header {
+  color: $secondary-text-color;
+  background-color: $primary-color;
+  border: none;
+
+  transition: color 350ms $timing-function,
+    background-color 350ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-text-color;
+    background-color: $accent-color;
+  }
+}

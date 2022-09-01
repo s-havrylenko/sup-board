@@ -1,0 +1,10 @@
+.logo-icon {
+  fill: $primary-text-color;
+
+  transition: fill 350ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
+  }
+}
