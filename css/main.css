@@ -27,7 +27,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22em;
+  color: #262C27;
 }
 
 .header {
@@ -161,17 +162,18 @@ body {
 .button {
   font-family: "Comfortaa", cursive;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2em;
   text-transform: uppercase;
-  padding: 12px 71px 8.5px 71px;
   cursor: pointer;
 }
 
 .button__header {
-  color: #ffffff;
+  min-width: 193;
+  padding: 12px 71px 8.4px 71px;
   background-color: #262C27;
   border: none;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #ffffff;
   transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button__header:hover, .button__header:focus {
@@ -183,12 +185,6 @@ body {
   text-align: center;
   border: none;
   background-color: transparent;
-  cursor: pointer;
-}
-.button__play--info {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 .button__play-icon {
   fill: #ffffff;
@@ -197,15 +193,35 @@ body {
 .button__play:hover .button__play-icon, .button__play:focus .button__play-icon {
   fill: #B9C400;
 }
-
-.button__span {
+.button__play--info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.button__play-span {
   display: block;
   margin-top: 12px;
   color: #ffffff;
   transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button__play:hover .button__span, .button__play:focus .button__span {
+.button__play:hover .button__play-span, .button__play:focus .button__play-span {
   color: #0093A1;
+}
+
+.button__buy {
+  min-width: 448px;
+  padding: 18px 197px 17px 197px;
+  background-color: transparent;
+  border: 2px solid #0093A1;
+  font-size: 40px;
+  line-height: 1.125em;
+  color: #0093A1;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__buy:hover, .button__buy:focus {
+  color: #262C27;
+  background-color: #B9C400;
+  border: 2px solid #B9C400;
 }
 
 .info {
@@ -235,7 +251,7 @@ body {
 .info__top {
   display: flex;
   margin-bottom: 65vh;
-  padding-top: 100px;
+  padding-top: 80px;
   gap: 80px;
 }
 .info__top--text {
@@ -248,7 +264,6 @@ body {
 }
 .info__top--img {
   width: 227px;
-  height: 650px;
   z-index: 5;
 }
 
@@ -256,24 +271,83 @@ body {
   display: flex;
   align-items: center;
   padding-bottom: 50px;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
 }
 .info__specs-titel {
   margin-right: 160px;
-  font-family: "Comfortaa", cursive;
   font-weight: 400;
   font-size: 60px;
   line-height: 1.12em;
-  text-transform: uppercase;
 }
 .info__specs-list {
   width: 565px;
   padding: 30px 0;
+  font-weight: 700;
   border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
 }
 .info__specs-item {
   display: flex;
+  gap: 25px;
 }
 .info__specs-coption {
   width: 185px;
+}
+
+.buy {
+  padding: 150px 0;
+}
+.buy__inter {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.buy__content {
+  position: relative;
+  width: 510px;
+}
+.buy__title {
+  margin-bottom: 50px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.12em;
+  color: #0093A1;
+}
+.buy__list {
+  width: 295px;
+  margin-bottom: 50px;
+}
+.buy__prices {
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 201px;
+  height: 199px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.2em;
+  background-image: url(../../imgs/prise-star-pr.svg);
+}
+
+.buy__item {
+  margin-bottom: 25px;
+}
+.buy__item:last-child {
+  margin-bottom: 0;
+}
+.buy__item:hover, .buy__item:focus {
+  cursor: pointer;
+}
+.buy__item-title {
+  margin-bottom: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.buy__item:hover .buy__item-title, .buy__item:focus .buy__item-title {
+  color: #0093A1;
 }/*# sourceMappingURL=main.css.map */

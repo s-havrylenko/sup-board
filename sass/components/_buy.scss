@@ -1,0 +1,75 @@
+.buy {
+  padding: 150px 0;
+
+  &__inter {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+
+  &__content {
+    position: relative;    
+
+    width: 510px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.12em;
+
+    color: $accent-text-color;
+  }
+
+  &__list {
+    width: 295px;
+    margin-bottom: 50px;
+  } 
+  
+  &__prices {
+    position: absolute;
+    right: 0;
+    bottom: 130px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 201px;
+    height: 199px;
+
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2em;    
+
+    background-image: url(../../imgs/prise-star-pr.svg);        
+  }
+}
+
+.buy__item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+
+  &-title {
+    margin-bottom: 5px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+    .buy__item:hover &,
+    .buy__item:focus & {
+      color: $accent-text-color;      
+    }
+  }
+}
