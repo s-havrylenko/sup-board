@@ -24,3 +24,42 @@
     background-color: $accent-color;
   }
 }
+
+.button__play {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &--info {
+    position: absolute;
+    bottom: 0;   
+    right: 0;
+  }
+
+  &-icon {
+    fill: #ffffff;
+    
+    transition: fill 350ms $timing-function;
+       
+    .button__play:hover &,
+    .button__play:focus & {
+      fill: $accent-color;
+    }
+  }  
+}
+
+.button__span {
+  display: block;
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  transition: color 350ms $timing-function;
+
+  .button__play:hover &,
+  .button__play:focus & {
+    color: $accent-text-color;
+  }
+}

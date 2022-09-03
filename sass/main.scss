@@ -2,8 +2,8 @@
 @import './utils/variables';
 
 // Утилиты
-// @import './utils/normalize';
 @import './utils/container';
+@import './utils/list';
 @import './utils/link';
 @import './utils/title';
 
@@ -12,3 +12,4 @@
 @import './components/hader';
 @import './components/logo';
 @import './components/button';
+@import './components/info';

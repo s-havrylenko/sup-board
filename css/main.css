@@ -7,12 +7,18 @@
   padding-top: 57px;
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -171,4 +177,103 @@ body {
 .button__header:hover, .button__header:focus {
   color: #262C27;
   background-color: #B9C400;
+}
+
+.button__play {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button__play--info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.button__play-icon {
+  fill: #ffffff;
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__play:hover .button__play-icon, .button__play:focus .button__play-icon {
+  fill: #B9C400;
+}
+
+.button__span {
+  display: block;
+  margin-top: 12px;
+  color: #ffffff;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__play:hover .button__span, .button__play:focus .button__span {
+  color: #0093A1;
+}
+
+.info {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  background-image: url(.././imgs/info-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  height: 150px;
+  width: 100%;
+  background-color: #262C27;
+}
+.info__inter {
+  color: #ffffff;
+}
+
+.info__top {
+  display: flex;
+  margin-bottom: 65vh;
+  padding-top: 100px;
+  gap: 80px;
+}
+.info__top--text {
+  position: relative;
+  padding-top: 245px;
+  width: 290px;
+}
+.info__top--text:not(:first-child) {
+  border-bottom: 1px solid #FFFFFF;
+}
+.info__top--img {
+  width: 227px;
+  height: 650px;
+  z-index: 5;
+}
+
+.info__specs {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.info__specs-titel {
+  margin-right: 160px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.12em;
+  text-transform: uppercase;
+}
+.info__specs-list {
+  width: 565px;
+  padding: 30px 0;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.info__specs-item {
+  display: flex;
+}
+.info__specs-coption {
+  width: 185px;
 }/*# sourceMappingURL=main.css.map */
