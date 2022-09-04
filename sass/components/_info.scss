@@ -54,17 +54,10 @@
 .info__specs {
   display: flex;
   align-items: center;
-  padding-bottom: 50px;
-
-  font-family: 'Comfortaa', cursive;
-  text-transform: uppercase;
+  padding-bottom: 50px;  
 
   &-titel {
-    margin-right: 160px;
-    
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 1.12em;    
+    margin-right: 160px;    
   }
 
   &-list {

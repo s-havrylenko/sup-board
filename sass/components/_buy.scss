@@ -1,5 +1,5 @@
 .buy {
-  padding: 150px 0;
+  padding: 150px 0 0;
 
   &__inter {
     display: flex;
@@ -15,12 +15,7 @@
 
   &__title {
     margin-bottom: 50px;
-
-    font-family: 'Comfortaa', cursive;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 1.12em;
-
+    
     color: $accent-text-color;
   }
 
@@ -37,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     width: 201px;
     height: 199px;
 
@@ -45,7 +40,7 @@
     font-size: 35px;
     line-height: 1.2em;    
 
-    background-image: url(../../imgs/prise-star-pr.svg);        
+    background-image: url(.././imgs/prise-star-pr.svg);        
   }
 }
 

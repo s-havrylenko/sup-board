@@ -7,8 +7,9 @@
 }
 
 .button__header {
-  min-width: 193;
-  padding: 12px 71px 8.4px 71px;
+  max-width: 193px;
+  width: 100%;
+  padding: 12px 50px 8.4px 50px;
   background-color: $primary-color;
   border: none;
   
@@ -28,6 +29,7 @@
 }
 
 .button__play {
+  position: absolute;
   text-align: center;
   border: none;
   background-color: transparent; 
@@ -43,12 +45,6 @@
     }
   }
 
-  &--info {
-    position: absolute;
-    bottom: 0;   
-    right: 0;
-  }
-
   &-span {
     display: block;
     margin-top: 12px;
@@ -62,11 +58,22 @@
       color: $accent-text-color;
     }
   }
+
+  &--info {    
+    bottom: 0;   
+    right: 0;
+  }  
+
+  &--tehnology {    
+    top: 50vh;
+    right: 350px;
+  }
 }
 
 .button__buy {
-  min-width: 448px;
-  padding: 18px 197px 17px 197px;
+  max-width: 448px;
+  width: 100%;
+  padding: 18px 50px 17px 50px;
   background-color: transparent;
   border: 2px solid $accent-text-color;
 

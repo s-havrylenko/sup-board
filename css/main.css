@@ -167,8 +167,9 @@ body {
 }
 
 .button__header {
-  min-width: 193;
-  padding: 12px 71px 8.4px 71px;
+  max-width: 193px;
+  width: 100%;
+  padding: 12px 50px 8.4px 50px;
   background-color: #262C27;
   border: none;
   font-size: 20px;
@@ -182,6 +183,7 @@ body {
 }
 
 .button__play {
+  position: absolute;
   text-align: center;
   border: none;
   background-color: transparent;
@@ -193,11 +195,6 @@ body {
 .button__play:hover .button__play-icon, .button__play:focus .button__play-icon {
   fill: #B9C400;
 }
-.button__play--info {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 .button__play-span {
   display: block;
   margin-top: 12px;
@@ -207,10 +204,19 @@ body {
 .button__play:hover .button__play-span, .button__play:focus .button__play-span {
   color: #0093A1;
 }
+.button__play--info {
+  bottom: 0;
+  right: 0;
+}
+.button__play--tehnology {
+  top: 50vh;
+  right: 350px;
+}
 
 .button__buy {
-  min-width: 448px;
-  padding: 18px 197px 17px 197px;
+  max-width: 448px;
+  width: 100%;
+  padding: 18px 50px 17px 50px;
   background-color: transparent;
   border: 2px solid #0093A1;
   font-size: 40px;
@@ -222,6 +228,14 @@ body {
   color: #262C27;
   background-color: #B9C400;
   border: 2px solid #B9C400;
+}
+
+.title {
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.12em;
+  text-transform: uppercase;
 }
 
 .info {
@@ -271,14 +285,9 @@ body {
   display: flex;
   align-items: center;
   padding-bottom: 50px;
-  font-family: "Comfortaa", cursive;
-  text-transform: uppercase;
 }
 .info__specs-titel {
   margin-right: 160px;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 1.12em;
 }
 .info__specs-list {
   width: 565px;
@@ -296,7 +305,7 @@ body {
 }
 
 .buy {
-  padding: 150px 0;
+  padding: 150px 0 0;
 }
 .buy__inter {
   display: flex;
@@ -309,10 +318,6 @@ body {
 }
 .buy__title {
   margin-bottom: 50px;
-  font-family: "Comfortaa", cursive;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 1.12em;
   color: #0093A1;
 }
 .buy__list {
@@ -331,7 +336,7 @@ body {
   font-weight: 700;
   font-size: 35px;
   line-height: 1.2em;
-  background-image: url(../../imgs/prise-star-pr.svg);
+  background-image: url(.././imgs/prise-star-pr.svg);
 }
 
 .buy__item {
@@ -350,4 +355,119 @@ body {
 }
 .buy__item:hover .buy__item-title, .buy__item:focus .buy__item-title {
   color: #0093A1;
+}
+
+.tehnology {
+  padding-bottom: 150px;
+}
+.tehnology__top {
+  background-color: #2f303a;
+  background-image: url(.././imgs/technology-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tehnology__inner {
+  position: relative;
+  height: 110vh;
+}
+.tehnology__top-box {
+  position: absolute;
+  bottom: 85px;
+  left: 0;
+  max-width: 470px;
+}
+.tehnology__title {
+  margin-bottom: 62px;
+}
+
+.tehnology__list {
+  margin: 0;
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+.tehnology__list-item {
+  margin-bottom: 15px;
+  padding-left: 24px;
+}
+.tehnology__list-item :last-child {
+  margin-bottom: 0;
+}
+
+.gallery__box {
+  display: flex;
+  gap: 65px;
+  margin-top: 115px;
+}
+
+.gallery__text {
+  width: 350px;
+}
+
+.gallery__min {
+  position: relative;
+  margin-top: -35%;
+  margin-bottom: 150px;
+  padding: 72px 31px 52px;
+  display: grid;
+  gap: 30px 24px;
+  grid-template-columns: 481px 208px;
+  grid-template-rows: 432px 300px;
+}
+.gallery__min::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 3px solid #262C27;
+  border-radius: 200px 0px 300px;
+}
+.gallery__min-img--1 {
+  grid-column: 1/3;
+  border-radius: 400px 0px 0px 0px;
+}
+.gallery__min-img--2 {
+  border-radius: 0px 0px 0px 300px;
+}
+
+.gallery__max {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px 469px 391px;
+  grid-template-rows: 340px 270px 270px;
+}
+.gallery__max-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0093A1;
+  border-radius: 0px 0px 0px 200px;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.22em;
+  color: #ffffff;
+}
+.gallery__max-img--2 {
+  grid-column: 2/-1;
+  justify-self: end;
+  border-radius: 0px 500px 0px 0px;
+}
+.gallery__max-img--3 {
+  border-radius: 0px 0px 150px 0px;
+}
+.gallery__max-img--4 {
+  border-radius: 0px 200px 0px 0px;
+}
+.gallery__max-img--5 {
+  border-radius: 200px 0px 0px 0px;
+}
+.gallery__max-img--6 {
+  grid-column: 2/-1;
+  border-radius: 0px 0px 0px 400px;
 }/*# sourceMappingURL=main.css.map */

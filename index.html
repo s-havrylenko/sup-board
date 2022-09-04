@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  <!--Heder section -->
   <header class="header">
     <div class="container container__header">
       <div class="header__top">
@@ -26,6 +27,7 @@
         <button class="button button__header">BUY</button>
         <a class="header__phone" href="tel:+77777777">+7 777 77 77</a>
       </div>
+
       <div class="header__content">
         <div class="header__content-box">
           <h1 class="header__titel">RAY AIR POCKET</h1>
@@ -40,6 +42,7 @@
   </header>
 
   <main class="main">
+    <!-- INFO section -->
     <section class="info">
       <div class="container">
         <div class="info__inter">
@@ -64,8 +67,9 @@
             </p>
             <img class="info__top--img" src="./imgs/info-sup.png" alt="Image sup board">
           </div>
+
           <div class="info__specs">
-            <h2 class="info__specs-titel">SPECS</h2>
+            <h2 class="info__specs-titel title">SPECS</h2>
             <ul class="info__specs-list list">
               <li class="info__specs-item">
                 <p class="info__specs-coption">BOARD</p>
@@ -108,12 +112,12 @@
         </div>
       </div>
     </section>
-
+    <!-- A BUY section-->
     <section class="buy">
       <div class="container">
         <div class="buy__inter">
           <div class="buy__content">
-            <h2 class="buy__title">RAY AIR POCKET</h2>
+            <h2 class="buy__title title">RAY AIR POCKET</h2>
             <ul class="buy__list list">
               <li class="buy__item">
                 <h3 class="buy__item-title">CLICK FINS</h3>
@@ -138,6 +142,7 @@
                 <p class="buy__item-text">Extremely portable, the ultimate travel companion</p>
               </li>
             </ul>
+
             <div class="buy__prices">              
               590 €
             </div>
@@ -147,8 +152,62 @@
         </div>        
       </div>
     </section>
-  </main>
+    <!-- TECHNOLOGY section-->
+    <section class="tehnology">
+      <div class="tehnology__top">
+        <div class="container">
+          <div class="tehnology__inner">
+            <div class="tehnology__top-box">
+              <h2 class="tehnology__title title">MICRO TECHNOLOGY</h2>
+              <ol class="tehnology__list">
+                <li class="tehnology__list-item">First PVC rail layer</li>
+                <li class="tehnology__list-item">Second PVC rail layer</li>
+                <li class="tehnology__list-item">Thin diamond grooving split-pad</li>
+                <li class="tehnology__list-item">Strong Tarpaulin layer</li>
+                <li class="tehnology__list-item">V-Drop Stitch core</li>
+              </ol>
+            </div>
 
-  <script src="./js/prices.js"></script>
+            <button class="button__play button__play--tehnology">
+              <svg class="button__play-icon" width="70" height="70">
+                <use href="./imgs/sprite1.svg#icon-button-play"></use>
+              </svg>
+              <span class="button button__play-span">Play video</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="container">
+          <div class="gallery__inner">
+            <div class="gallery__box">
+              <p class="gallery__text">
+                Our new Micro technology provides a featherweight and quality construction that can be rolled and packed into a backpack
+                half the width of a standard iSUP package. The reduced pad and our twin Click Fin system make it possible to have a
+                regular sized iSUP packed into minimal space.
+              </p>
+              
+              <div class="gallery__min">
+                <img class="gallery__min-img gallery__min-img--1" src="./imgs/gallery-min1.jpg" alt="">
+                <img class="gallery__min-img" src="./imgs/gallery-min2.jpg" alt="">
+                <img class="gallery__min-img" src="./imgs/gallery-min3.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="gallery__max">
+              <img class="gallery__max-img" src="./imgs/gallery-max1.jpg" alt="">
+              <img class="gallery__max-img gallery__max-img--2" src="./imgs/gallery-max2.jpg" alt="">
+              <img class="gallery__max-img gallery__max-img--3" src="./imgs/gallery-max3.jpg" alt="">
+              <img class="gallery__max-img gallery__max-img--4" src="./imgs/gallery-max4.jpg" alt="">
+              <img class="gallery__max-img gallery__min-img--5" src="./imgs/gallery-max5.jpg" alt="">
+              <p class="gallery__max-text">ENJOY <br> YOUR LIFE</p>
+              <img class="gallery__max-img gallery__max-img--6" src="./imgs/gallery-max6.jpg" alt="">
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>  
 </body>
 </html>
