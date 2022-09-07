@@ -1,10 +1,16 @@
-.logo-icon {
-  fill: $primary-text-color;
-
+.logo-icon { 
   transition: fill 350ms $timing-function;
 
   &:hover,
   &:focus {
     fill: $accent-text-color;
+  }
+
+  &__header {
+    fill: $primary-text-color;
+  }
+
+  &__footer {
+    fill: $secondary-text-color;
   }
 }
