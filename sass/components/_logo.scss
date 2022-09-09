@@ -1,3 +1,7 @@
+.logo {
+  display: block;
+}
+
 .logo-icon { 
   transition: fill 350ms $timing-function;
 
@@ -6,7 +10,7 @@
     fill: $accent-text-color;
   }
 
-  &__header {
+  &__header {   
     fill: $primary-text-color;
   }
 

@@ -1,6 +1,4 @@
-.button {
-  max-width: 193px;
-  width: 100%;
+.button { 
   padding: 12px 50px 8.4px 50px;
 
   font-family: 'Comfortaa', cursive;
@@ -20,6 +18,16 @@
     background-color: $primary-color;
   
     color: $secondary-text-color;
+
+    @media screen and (max-width: 767px) {      
+      width: 60%;
+      margin: 30px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 193px;
+      width: 100%;
+    }
     
     &:hover,
     &:focus {

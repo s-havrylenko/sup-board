@@ -1,7 +1,16 @@
 .container {
-  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 .container__header {
   padding-top: 57px;
@@ -71,32 +80,65 @@ body {
   transform: translateY(75%) rotate(180deg);
   z-index: 3;
 }
-.header__top {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  justify-content: flex-end;
+@media screen and (max-width: 767px) {
+  .header__top {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__top {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__top {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 .header__content {
   position: relative;
   min-height: calc(100vh - 45px);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .header__content {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__content {
+    justify-content: flex-end;
+  }
 }
 .header__content-box {
   max-width: 550px;
   text-align: center;
-  margin-right: 30px;
   font-family: "Comfortaa", cursive;
   font-weight: 700;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .header__content-box {
+    margin-right: 30px;
+  }
 }
 .header__titel {
   margin-bottom: 20px;
   font-size: 64px;
   line-height: 1.12em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 420px) {
+  .header__titel {
+    font-size: 50px;
+  }
 }
 .header__text {
   margin: 0;
@@ -106,10 +148,20 @@ body {
 .header__text:not(:last-child) {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 420px) {
+  .header__text {
+    font-size: 18px;
+  }
+}
 
 .header__phone {
   padding: 5px;
   transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .header__phone {
+    display: block;
+  }
 }
 .header__phone:hover, .header__phone:focus {
   color: #0093A1;
@@ -119,9 +171,23 @@ body {
   position: absolute;
   margin: 0;
   font-weight: 400;
-  font-size: 130px;
   line-height: 1.12em;
   color: #0093A1;
+}
+@media screen and (max-width: 420px) {
+  .header__decor-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__decor-text {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__decor-text {
+    font-size: 130px;
+  }
 }
 .header__decor-text--one {
   right: 150px;
@@ -129,15 +195,30 @@ body {
   opacity: 0.5;
   z-index: 1;
 }
+@media screen and (max-width: 1199px) {
+  .header__decor-text--one {
+    opacity: 0.2;
+  }
+}
 .header__decor-text--two {
-  left: 260px;
-  bottom: 0px;
-  opacity: 0.5;
   z-index: 4;
+}
+@media screen and (max-width: 1199px) {
+  .header__decor-text--two {
+    bottom: -100px;
+    left: 0;
+    opacity: 0.2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__decor-text--two {
+    bottom: 0;
+    left: 17%;
+    opacity: 0.5;
+  }
 }
 .header__decor-text--three {
   max-width: 360px;
-  right: 145px;
   bottom: 25px;
   text-align: center;
   font-style: italic;
@@ -145,6 +226,21 @@ body {
   font-size: 32px;
   line-height: 1.21em;
   z-index: 4;
+}
+@media screen and (max-width: 767px) {
+  .header__decor-text--three {
+    right: 50%;
+    transform: translate(50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__decor-text--three {
+    right: 145px;
+  }
+}
+
+.logo {
+  display: block;
 }
 
 .logo-icon {
@@ -161,8 +257,6 @@ body {
 }
 
 .button {
-  max-width: 193px;
-  width: 100%;
   padding: 12px 50px 8.4px 50px;
   font-family: "Comfortaa", cursive;
   font-weight: 700;
@@ -176,6 +270,18 @@ body {
 .button__header {
   background-color: #262C27;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .button__header {
+    width: 60%;
+    margin: 30px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button__header {
+    max-width: 193px;
+    width: 100%;
+  }
 }
 .button__header:hover, .button__header:focus {
   color: #262C27;
