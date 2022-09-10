@@ -82,9 +82,23 @@
     }
   }
 
-  &--info {    
-    bottom: 0;   
-    right: 0;
+  &--info { 
+
+    @media screen and (max-width: 419px) {
+      top: 120%;
+      right: 50%;
+      transform: translate(50%);
+    }
+    
+    @media screen and (min-width: 420px) and (max-width: 1199px) {
+      top: 120%;   
+      right: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      bottom: 0;  
+      right: 0;
+    }
   }  
 
   &--tehnology {    

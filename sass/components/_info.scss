@@ -23,23 +23,49 @@
     background-color: $primary-color;
   }
 
-  &__inter {
+  &__inner {
     color: $secondary-text-color;
   }
 }
 
 .info__top {
-  display: flex;
+  display: block;
   margin-bottom: 65vh;
-  padding-top: 80px;
-  gap: 80px;
+  padding-top: 300px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 65vh;
+    padding-top: 80px;
+    gap: 80px;
+  }
 
   &--text {
     position: relative;
-    padding-top: 245px;
-    width: 290px;    
+
+    @media screen and (max-width: 419px) {      
+      margin-bottom: 180px;
+    }
+    
+    @media screen and (min-width: 420px) and (max-width: 1199px) {  
+      margin-bottom: 150px;      
+    }
+
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {      
+      padding-top: 245px;
+      width: 290px;
+    }
     
     &:not(:first-child) {
+      padding-bottom: 30px;
       border-bottom: 1px solid #FFFFFF;
     }
   }
@@ -48,20 +74,35 @@
     width: 227px;
     
     z-index: 5;
+
+    @media screen and (max-width: 1199px) {
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
 .info__specs {
-  display: flex;
-  align-items: center;
+  display: block;
   padding-bottom: 50px;  
 
-  &-titel {
-    margin-right: 160px;    
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;    
   }
 
-  &-list {
-    width: 565px;
+  &-titel {    
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 160px;
+    }
+  }
+
+  &-list {    
     padding: 30px 0;
 
     font-weight: 700;
@@ -69,15 +110,29 @@
     border-top: 1px solid #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
 
-    // font-weight: 700;
-    // font-size: 18px;
-    // line-height: 22px;
+    @media screen and (max-width: 629px) {
+      width: 100%;
+    }  
+
+    @media screen and (min-width: 630px) {
+      width: 565px;
+    }
   }
 
   &-item {
-    display: flex;
+    
+    @media screen and (max-width: 629px) {
+      display: block;
 
-    gap: 25px;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }      
+    }
+
+    @media screen and (min-width: 630px) {
+      display: flex;
+      gap: 25px;
+    }
   }
 
   &-coption {
