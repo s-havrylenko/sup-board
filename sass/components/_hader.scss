@@ -126,15 +126,15 @@
 .header__phone {
   padding: 5px;
 
-  transition: color 350ms $timing-function;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
+  transition: color 350ms $timing-function;  
 
   &:hover,
   &:focus {
     color: $accent-text-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: block;
   }
 }
 

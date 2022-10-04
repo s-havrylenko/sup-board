@@ -37,6 +37,8 @@
   }
 
   &__footer {
+    display: block;
+
     background-color: #ffffff;
     
     color: #000000;
@@ -84,13 +86,13 @@
 
   &--info { 
 
-    @media screen and (max-width: 419px) {
+    @media screen and (max-width: 599px) {
       top: 120%;
       right: 50%;
       transform: translate(50%);
     }
     
-    @media screen and (min-width: 420px) and (max-width: 1199px) {
+    @media screen and (min-width: 600px) and (max-width: 1199px) {
       top: 120%;   
       right: 0;
     }

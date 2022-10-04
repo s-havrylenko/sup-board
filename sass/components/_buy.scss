@@ -3,14 +3,28 @@
 
   &__inter {
     display: flex;
-    align-items: center;
-    gap: 90px;
+    justify-content: center;
+        
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: center;
+      gap: 90px;
+    }
   }
 
   &__content {
     position: relative;    
 
-    width: 510px;
+    width: 503px;
+
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+
+      order: 1;
+    }
   }
 
   &__title {
@@ -22,6 +36,11 @@
   &__list {
     width: 295px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+      max-width: 490px;
+    }
   } 
   
   &__prices {
@@ -42,12 +61,32 @@
 
     background-image: url(.././imgs/prise-star.svg);        
     
-    transition: transform 350ms $timing-function,
-        
+    transition: transform 350ms $timing-function;
+
+    @media screen and (max-width: 500px) {
+      width: 170px;
+      height: 168px;
+      background-size: cover;
+      right: 0;
+      bottom: 105%;
+
+    }
+    
+    @media screen and (min-width: 501px) and (max-width: 750px) {
+      right: 0;
+      bottom: 105%;
+    }
   }
 
   &__prices:hover {
     transform: scale(1.3);
+  } 
+
+  &__img {
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }
 

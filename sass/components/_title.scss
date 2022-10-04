@@ -14,4 +14,8 @@ p {
   font-size: 60px;
   line-height: 1.12em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 550px) {
+    font-size: 48px;
+  }  
 }
