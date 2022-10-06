@@ -242,6 +242,12 @@ body {
 .logo {
   display: block;
 }
+@media screen and (max-width: 1199px) {
+  .logo__footer {
+    margin-bottom: 50px;
+    order: -1;
+  }
+}
 
 .logo-icon {
   transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -254,6 +260,11 @@ body {
 }
 .logo-icon__footer {
   fill: #ffffff;
+}
+@media screen and (max-width: 560px) {
+  .logo-icon__footer {
+    width: 90%;
+  }
 }
 
 .button {
@@ -295,6 +306,12 @@ body {
 .button__footer:hover, .button__footer:focus {
   color: #ffffff;
   background-color: #B9C400;
+}
+@media screen and (max-width: 1199px) {
+  .button__footer {
+    display: inline-block;
+    width: 40%;
+  }
 }
 
 .button__play {
@@ -341,7 +358,19 @@ body {
 }
 .button__play--tehnology {
   top: 50vh;
-  right: 350px;
+  right: 300px;
+}
+@media screen and (max-width: 420px) {
+  .button__play--tehnology {
+    top: 35vh;
+    right: 50px;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 1199px) {
+  .button__play--tehnology {
+    top: 50vh;
+    right: 50px;
+  }
 }
 
 .button__buy {
@@ -765,17 +794,13 @@ p {
 
 .gallery__max {
   display: grid;
+  gap: 20px;
   grid-template-columns: 300px 469px 391px;
   grid-template-rows: 340px 270px 270px;
 }
 @media screen and (max-width: 767px) {
   .gallery__max {
     gap: 10px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .gallery__max {
-    gap: 20px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -840,9 +865,20 @@ p {
   justify-content: space-between;
   margin-bottom: 97px;
 }
+@media screen and (max-width: 1199px) {
+  .footer__top {
+    text-align: center;
+    flex-direction: column;
+  }
+}
 
 .footer__form-titel {
   margin-bottom: 27px;
+}
+@media screen and (max-width: 560px) {
+  .footer__form-titel {
+    font-size: 40px;
+  }
 }
 .footer__form-input {
   max-width: 500px;
@@ -880,16 +916,48 @@ p {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1199px) {
+  .footer__social-text {
+    text-align: center;
+  }
+}
 
 .footer__gallery {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  .footer__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__gallery-img {
+    width: 100%;
+    align-self: stretch;
+  }
 }
 
 .mein-nav__list {
-  display: flex;
-  gap: 90px;
   font-weight: 700;
+}
+@media screen and (max-width: 1199px) {
+  .mein-nav__list {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mein-nav__list {
+    display: flex;
+    gap: 90px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mein-nav__item {
+    margin-bottom: 50px;
+  }
 }
 .mein-nav__link {
   transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);

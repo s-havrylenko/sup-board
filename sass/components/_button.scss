@@ -47,7 +47,12 @@
     &:focus {
       color: $secondary-text-color;
       background-color: $accent-color;
-    }  
+    }
+
+    @media screen and (max-width: 1199px) {
+      display: inline-block;
+      width:40%;
+    }
   }
 }
 
@@ -105,7 +110,17 @@
 
   &--tehnology {    
     top: 50vh;
-    right: 350px;
+    right: 300px;
+
+    @media screen and (max-width: 420px) {
+      top: 35vh;
+      right: 50px;
+    }
+    
+    @media screen and (min-width: 421px) and (max-width: 1199px) {
+      top: 50vh;
+      right: 50px;
+    }
   }
 }
 

@@ -156,18 +156,15 @@
 }
 
 .gallery__max {
-  display: grid;  
+  display: grid; 
+  gap: 20px;
   grid-template-columns: 300px 469px 391px;
   grid-template-rows: 340px 270px 270px;
 
   @media screen and (max-width: 767px) {
     gap: 10px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    gap: 20px;
-  }
-
+  
   @media screen and (max-width: 1199px) {
     width: 100%;
     grid-template-columns: 1fr 2fr 1fr;

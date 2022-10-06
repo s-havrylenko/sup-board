@@ -1,5 +1,14 @@
 .logo {
   display: block;
+
+  &__footer { 
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 50px;
+
+      order: -1;
+    }
+  }
 }
 
 .logo-icon { 
@@ -15,6 +24,10 @@
   }
 
   &__footer {
-    fill: $secondary-text-color;
+    fill: $secondary-text-color;    
+
+    @media screen and (max-width: 560px) {
+      width: 90%;
+    }
   }
 }
